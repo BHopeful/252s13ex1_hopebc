@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<style>
+body
+{background-color:#b0c4de;}
+</style>
+	<body>
+			<h1>Confirmation of Addresses in ISAT252</h1>
+	<form>
+		<br>Street Address <input type="text" name="Address"<br/>
+		<br>Street Address 2 <input type="text" name="Address 2"<br/>
+		<br>City <input type="text" name="City"><br/>
+		<br>Zip <input type="number" name="Zip"><br/>
+		<br>Phone Number <input type="number" name="No"><br/>
+	</form>
+<!--Dropdown form-->
+	<form action="">
+		<select name="State">
+		<option value="Va">VA</option>
+		<option value="Md">MD</option>
+		<option value="NY">NY</option>
+		<option value="CA">CA</option>
+		</select>
+		</form>
+	<input type="submit" value="Submit">
+<!--Javascript-->
+  <script language="Javascript><type="text/Javascript">
+		if (form.address.value == "") {
+		alert( "Please enter your Address." );
+		form.Address.focus();
+		return false ;
+  } </script>
+	<!--<script>function validateForm()
+	{var Address=document.forms["myForm"]["Address"].value;
+	if (Address==null || Address=="")
+	{alert("Address must be filled out!");
+	return false;}}</script>
+<!-- <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+</form>-->
+
+	
